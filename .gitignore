@@ -1,0 +1,20 @@
+# Ignore python cache
+__pycache__/
+*.pyc
+
+# Ignore heavy datasets
+/train/
+/val/
+/test/
+*.jpg
+*.png
+
+# Ignore massive YOLO training runs
+/runs/
+*.pt
+
+# We DO want to track the lightweight ONNX file!
+!best.onnx
+
+# Ignore telemetry logs
+telemetry_log.csv
